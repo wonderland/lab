@@ -47,15 +47,17 @@ In this scenario, you will create two StorageClasses, discovery their capabiliti
 You are using NetApp Astra Trident in this lab. It is running in the namespace *trident*.
 The backends in this environment are allready created. Take a short time to review them:
 
-    kubectl get tbc -n trident
+```bash
+kubectl get tbc -n trident
+
 
 First let's create two StorageClasses. We've prepared the necessary file already in the folder. There is one storage class prepared for the nas backend and one for san.
 
 The file you will use for nas is called *sc-csi-ontap-nas.yaml*  
 The command...
 
-```shell
-    cat sc-csi-ontap-nas.yaml 
+```console
+cat sc-csi-ontap-nas.yaml 
 ```
 
 ...will provide you the following output of the file:
