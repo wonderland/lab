@@ -49,7 +49,7 @@ The backends in this environment are allready created. Take a short time to revi
 
 ```bash
 kubectl get tbc -n trident
-
+```
 
 First let's create two StorageClasses. We've prepared the necessary file already in the folder. There is one storage class prepared for the nas backend and one for san.
 
@@ -74,7 +74,7 @@ cat sc-csi-ontap-nas.yaml
       backendType: "ontap-nas"
       storagePools: "nas-default:aggr1"
     allowVolumeExpansion: true 
-````
+```
 
 You can see the following things:
 1. This StoraceClass will be the default in this cluster (look at annotations)
