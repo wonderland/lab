@@ -58,8 +58,7 @@ The command...
 
 ...will provide you the following output of the file:
 
-```
-yaml
+```yaml
     apiVersion: storage.k8s.io/v1
     kind: StorageClass
     metadata:
