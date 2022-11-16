@@ -54,7 +54,9 @@ First let's create two StorageClasses. We've prepared the necessary file already
 The file you will use for nas is called *sc-csi-ontap-nas.yaml*  
 The command...
 
+```shell
     cat sc-csi-ontap-nas.yaml 
+```
 
 ...will provide you the following output of the file:
 
