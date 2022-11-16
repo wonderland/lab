@@ -57,19 +57,19 @@ The command...
     cat sc-csi-ontap-nas.yaml 
 
 ...will provide you the following output of the file:
-
- >   apiVersion: storage.k8s.io/v1
- >   kind: StorageClass
- >   metadata:
- >     name: storage-class-nas
- >     annotations:
- >       storageclass.kubernetes.io/is-default-class: "true"
- >   provisioner: csi.trident.netapp.io
- >   parameters:
- >     backendType: "ontap-nas"
- >     storagePools: "nas-default:aggr1"
- >   allowVolumeExpansion: true 
-
+```
+    apiVersion: storage.k8s.io/v1
+    kind: StorageClass
+    metadata:
+      name: storage-class-nas
+      annotations:
+        storageclass.kubernetes.io/is-default-class: "true"
+    provisioner: csi.trident.netapp.io
+    parameters:
+      backendType: "ontap-nas"
+      storagePools: "nas-default:aggr1"
+    allowVolumeExpansion: true 
+````
 You can see the following things:
 1. This StoraceClass will be the default in this cluster (look at annotations)
 2. NetApp Astra Trident is responsible for the provisioning of PVCs with this storage class (look at provisioner)
